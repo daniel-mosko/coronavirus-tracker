@@ -1,0 +1,116 @@
+:root{
+    --shadow: #676b6e2c;
+}
+html {
+    height: 100%;
+}
+body {
+    color: white;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: Roboto;
+}
+
+.grafy{
+    padding-top: 2rem;
+}
+
+.MainHeader{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    padding: 5rem;
+}
+
+.header{
+    color: white;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.36);
+    text-transform: uppercase;
+}
+
+.table1 {
+    border: 0;
+    border-collapse: collapse;
+    color: white;
+    margin: auto;
+    width: 100%;
+    background-color: #D8F0DA;
+    min-width: 100%;
+    position: relative;
+    opacity: 0.97;
+    background: transparent;
+}
+
+.content{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.pagination ul{
+    color: #25b7c4;
+}
+
+.page-item.active .page-link{
+    color: white;
+    background-color: #25c481;
+    border-color: #25c481;
+}
+
+/*********************************
+sipka nahor (back to top)
+*/
+.back_to_top {
+    color: white;
+    height: auto;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    margin: 0;
+    z-index: 10000;
+    transition: all .3s ease 0s;
+    text-decoration: none;
+}
+
+.back_to_top.show {
+    visibility: visible;
+    opacity: 1;
+}
+.back_to_top.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#back_to_top:hover>span {
+    background-color: var(--primary);
+}
+
+#back_to_top>span {
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-decoration: none;
+    border-radius: 52px;
+    transition: all .2s ease 0s;
+    border: 2px solid var(--primary2);
+    background: 0 0;
+}
+
+#back_to_top span{
+    text-align: center;
+    background-color: var(--primary2);
+}
+
+.fa-stack {
+    color: white;
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
